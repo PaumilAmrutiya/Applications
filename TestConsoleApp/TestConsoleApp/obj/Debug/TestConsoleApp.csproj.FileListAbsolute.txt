@@ -1,1 +1,2 @@
 C:\Users\apaum\Desktop\Paumil\TempProjects\TestConsoleApp\TestConsoleApp\bin\Debug\TestConsoleApp.exe.config
+C:\Users\pamrutiya\Documents\GitHub\Applications\TestConsoleApp\TestConsoleApp\bin\Debug\TestConsoleApp.exe.config
