@@ -1,0 +1,11 @@
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\bin\Debug\Repository.dll.config
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\bin\Debug\Repository.dll
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\bin\Debug\Repository.pdb
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\bin\Debug\EntityFramework.dll
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\bin\Debug\EntityFramework.xml
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\obj\Debug\Repository.Migrations.InitialDb.resources
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\obj\Debug\Repository.dll
+D:\Arti\FamilyDayCare\FamilyDayCareSln\Repository\obj\Debug\Repository.pdb
