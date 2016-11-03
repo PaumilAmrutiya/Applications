@@ -7,6 +7,7 @@ namespace Repository.Migrations
     {
         public override void Up()
         {
+            //test
             CreateTable(
                 "dbo.Children",
                 c => new
