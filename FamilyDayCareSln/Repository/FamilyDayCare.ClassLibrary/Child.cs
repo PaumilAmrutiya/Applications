@@ -1,6 +1,8 @@
 ﻿using Repository.FamilyDayCare.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace Repository.FamilyDayCare.ClassLibrary
 {
@@ -22,7 +24,11 @@ namespace Repository.FamilyDayCare.ClassLibrary
         public string Mobile { get; set; }
         public int FamilyId { get; set; }
         public int OraganisationId { get; set; }
-
+        public DateTime StartDate { get; set; }
+        public bool Casual { get; set; }
+        public decimal CentrelinkMethods { get; set; }
+        public decimal CcbPercentage { get; set; }
+     
 
         public bool IsActive { get; set; }
         public string CreatedBy { get; set; }
@@ -34,5 +40,7 @@ namespace Repository.FamilyDayCare.ClassLibrary
         public Oraganisation Oraganisation { get; set; }
         [ForeignKey("SuburbId")]
         public Suburb Suburb { get; set; }
+        public List<ChildFrequency> ChildFrequencies { get; set; }
+       
     }
 }

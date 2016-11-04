@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FamilyDayCare.ClassLibrary\Child.cs" />
+    <Compile Include="FamilyDayCare.ClassLibrary\ChildFrequency.cs" />
+    <Compile Include="FamilyDayCare.ClassLibrary\FrequencyType.cs" />
     <Compile Include="FamilyDayCare.ClassLibrary\Oraganisation.cs" />
     <Compile Include="FamilyDayCare.ClassLibrary\State.cs" />
     <Compile Include="FamilyDayCare.ClassLibrary\Suburb.cs" />
@@ -63,6 +65,10 @@
     <Compile Include="Migrations\201610251344518_InitialDb.Designer.cs">
       <DependentUpon>201610251344518_InitialDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611040130062_AddedNewFieldsandTables.cs" />
+    <Compile Include="Migrations\201611040130062_AddedNewFieldsandTables.Designer.cs">
+      <DependentUpon>201611040130062_AddedNewFieldsandTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,6 +79,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201610251344518_InitialDb.resx">
       <DependentUpon>201610251344518_InitialDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611040130062_AddedNewFieldsandTables.resx">
+      <DependentUpon>201611040130062_AddedNewFieldsandTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
