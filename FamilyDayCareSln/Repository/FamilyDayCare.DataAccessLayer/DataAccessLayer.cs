@@ -41,7 +41,7 @@ namespace Repository.FamilyDayCare.DataAccessLayer
             try
             {
                 DataContext dataContext = new DataContext();
-                Oraganisation resOraganisation =  dataContext.Oraganisations.Where(o => o.Id == oraganisation.Id).Select(o => o as Oraganisation).FirstOrDefault();
+                Oraganisation resOraganisation = dataContext.Oraganisations.Where(o => o.Id == oraganisation.Id).Select(o => o as Oraganisation).FirstOrDefault();
                 if (resOraganisation != null)
                 {
                     resOraganisation.Name = oraganisation.Name;
@@ -71,20 +71,20 @@ namespace Repository.FamilyDayCare.DataAccessLayer
                 switch (key)
                 {
                     case CommonEnums.SearchKey.OraganisationId:
-                    {
-                        resOraganisation = dataContext.Oraganisations.Find(oraganisation.Id);
-                        break;
-                    }
+                        {
+                            resOraganisation = dataContext.Oraganisations.Find(oraganisation.Id);
+                            break;
+                        }
                     case CommonEnums.SearchKey.OraganisationName:
-                    {
-                        resOraganisation = dataContext.Oraganisations.Find(oraganisation.Name);
-                        break;
-                    }
+                        {
+                            resOraganisation = dataContext.Oraganisations.Find(oraganisation.Name);
+                            break;
+                        }
                     case CommonEnums.SearchKey.RegistrationNumber:
-                    {
-                        resOraganisation = dataContext.Oraganisations.Find(oraganisation.RegistrationNumber);
-                        break;
-                    }
+                        {
+                            resOraganisation = dataContext.Oraganisations.Find(oraganisation.RegistrationNumber);
+                            break;
+                        }
                 }
 
                 dataContext.Oraganisations.Remove(resOraganisation);
@@ -111,12 +111,12 @@ namespace Repository.FamilyDayCare.DataAccessLayer
                 switch (key)
                 {
                     case CommonEnums.SearchKey.SuburbId:
-                    {
-                        resOraganisations =
-                            dataContext.Oraganisations.Where(o => o.SuburbId == oraganisation.SuburbId)
-                                .ToList<Oraganisation>();
-                        break;
-                    }
+                        {
+                            resOraganisations =
+                                dataContext.Oraganisations.Where(o => o.SuburbId == oraganisation.SuburbId)
+                                    .ToList<Oraganisation>();
+                            break;
+                        }
                 }
             }
             catch (Exception exception)
@@ -162,20 +162,20 @@ namespace Repository.FamilyDayCare.DataAccessLayer
                 switch (key)
                 {
                     case CommonEnums.SearchKey.ChildId:
-                    {
-                        Child resChild = new Child();
-                        resChild = dataContext.Children.Find(child.Id);
-                        dataContext.Children.Remove(resChild);
-                        break;
-                    }
+                        {
+                            Child resChild = new Child();
+                            resChild = dataContext.Children.Find(child.Id);
+                            dataContext.Children.Remove(resChild);
+                            break;
+                        }
                     case CommonEnums.SearchKey.OraganisationId:
-                    {
-                        List<Child> resChildren = null;
-                        resChildren =
-                            dataContext.Children.Where(c => c.OraganisationId == child.OraganisationId).ToList();
-                        dataContext.Children.RemoveRange(resChildren);
-                        break;
-                    }
+                        {
+                            List<Child> resChildren = null;
+                            resChildren =
+                                dataContext.Children.Where(c => c.OraganisationId == child.OraganisationId).ToList();
+                            dataContext.Children.RemoveRange(resChildren);
+                            break;
+                        }
                 }
                 dataContext.SaveChanges();
             }
@@ -191,7 +191,7 @@ namespace Repository.FamilyDayCare.DataAccessLayer
         /// <param name="child"></param>
         /// <param name="key"></param>
         /// <returns></returns>
-        public List<Child> SearchChildren(Child child , CommonEnums.SearchKey key)
+        public List<Child> SearchChildren(Child child, CommonEnums.SearchKey key)
         {
             List<Child> resChildren = null;
             DataContext dataContext = new DataContext();
@@ -200,16 +200,16 @@ namespace Repository.FamilyDayCare.DataAccessLayer
                 switch (key)
                 {
                     case CommonEnums.SearchKey.OraganisationId:
-                    {
-                        resChildren =
-                            dataContext.Children.Where(c => c.OraganisationId == child.OraganisationId).ToList<Child>();
-                        break;
-                    }
+                        {
+                            resChildren =
+                                dataContext.Children.Where(c => c.OraganisationId == child.OraganisationId).ToList<Child>();
+                            break;
+                        }
                     case CommonEnums.SearchKey.SuburbId:
-                    {
-                        resChildren = dataContext.Children.Where(c => c.SuburbId == child.SuburbId).ToList<Child>();
-                        break;
-                    }
+                        {
+                            resChildren = dataContext.Children.Where(c => c.SuburbId == child.SuburbId).ToList<Child>();
+                            break;
+                        }
                 }
             }
             catch (Exception exception)
@@ -219,5 +219,28 @@ namespace Repository.FamilyDayCare.DataAccessLayer
             return resChildren;
         }
         #endregion Child
+
+        #region User
+
+        /// <summary>
+        /// This method is used to add new user information
+        /// </summary>
+        /// <param name="user"></param>
+        public void AddUser(User user)
+        {
+            try
+            {
+                DataContext dataContext = new DataContext();
+                dataContext.Users.Add(user);
+                dataContext.SaveChanges();
+            }
+            catch (Exception exception)
+            {
+                throw exception;
+            }
+        }
+
+        #endregion
+
     }
 }
