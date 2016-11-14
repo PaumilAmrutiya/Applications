@@ -10,6 +10,7 @@ namespace Repository.FamilyDayCare.ClassLibrary
         public int PostCode { get; set; }
         public int StateId { get; set; }
         public bool IsActive { get; set; }
+        public string Name { get; set; }
 
         [ForeignKey("StateId")]
         public State State { get; set; }

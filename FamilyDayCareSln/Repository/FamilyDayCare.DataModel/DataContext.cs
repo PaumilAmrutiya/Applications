@@ -16,8 +16,10 @@ namespace Repository.FamilyDayCare.DataModel
         public DbSet<State> States { get; set; }
         public DbSet<Suburb> Suburbs { get; set; }
 
-        public DataContext() : base("Data Source=DESKTOP-J0NMVRJ;Initial Catalog=FDCDatabase;Integrated Security=True")
+        public DataContext() : base("Data Source=pamrutiya02;Initial Catalog=FDCDatabase;Integrated Security=True")
         {
+            //Adding state
+            //State state =new State(){ 1,"Victoria","VIC"};
 
         }
 
