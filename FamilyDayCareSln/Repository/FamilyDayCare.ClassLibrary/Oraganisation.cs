@@ -14,8 +14,8 @@ namespace Repository.FamilyDayCare.ClassLibrary
         public int Id { get; set; }
         public string Name { get; set; }
         public string EducatorName { get; set; }
-        public int RegistrationNumber { get; set; }
-        public int WwcNumber { get; set; }
+        public string RegistrationNumber { get; set; }
+        public string WWCNumber { get; set; }
         public string Address { get; set; }
         public int SuburbId { get; set; }
         public int UserId { get; set; }
