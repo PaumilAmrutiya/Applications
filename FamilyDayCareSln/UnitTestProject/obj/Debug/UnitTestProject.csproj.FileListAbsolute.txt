@@ -1,0 +1,14 @@
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\UnitTestProject.dll.config
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\EntityFramework.dll
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\Repository.dll
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\Repository.pdb
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\EntityFramework.xml
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\apaum\Desktop\Applications\FamilyDayCareSln\UnitTestProject\obj\Debug\UnitTestProject.pdb
