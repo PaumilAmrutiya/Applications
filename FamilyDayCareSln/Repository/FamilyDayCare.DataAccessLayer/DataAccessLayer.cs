@@ -240,6 +240,16 @@ namespace Repository.FamilyDayCare.DataAccessLayer
             }
         }
 
+        /// <summary>
+        /// This method is used to get list of users
+        /// </summary>
+        /// <returns></returns>
+        public List<User> GetAllUser()
+        {
+            DataContext dataContext = new DataContext();
+            return dataContext.Users.ToList();
+        }
+
         #endregion
 
     }
